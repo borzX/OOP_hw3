@@ -8,13 +8,31 @@ public class Stream implements Iterable<StudentGroup>{
     public Integer idStream;
     public  StudentGroup studentGroup;
 
-    public Stream(List<StudentGroup> groups) {
+
+    public Stream(Integer idStream, List<StudentGroup> groups) {
+        this.idStream=idStream;
     }
 
 
     @Override
     public Iterator<StudentGroup> iterator() {
         return null;
+    }
+
+    public Integer getIdStream() {
+        return idStream;
+    }
+
+    public StudentGroup getStudentGroup() {
+        return studentGroup;
+    }
+
+    public void setStudentGroup(StudentGroup studentGroup) {
+        this.studentGroup = studentGroup;
+    }
+
+    public void setIdStream(Integer idStream) {
+        this.idStream = idStream;
     }
 
     @Override

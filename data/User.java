@@ -2,13 +2,14 @@ package ru.gb.oseminar.data;
 
 import java.time.LocalDate;
 
+
 public class User {
     private String firstName;
     private String secondName;
     private String patronymic;
-    private LocalDate dateOfBirth;
+    private String dateOfBirth;
 
-    public User(String firstName, String secondName, String patronymic, LocalDate dateOfBirth) {
+    public User(String firstName, String secondName, String patronymic, String dateOfBirth) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.patronymic = patronymic;
@@ -39,11 +40,11 @@ public class User {
         this.patronymic = patronymic;
     }
 
-    public LocalDate getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(LocalDate dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 

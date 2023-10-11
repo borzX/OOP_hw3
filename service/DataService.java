@@ -19,7 +19,7 @@ public class DataService {
         return this.users;
     }
 
-    public void create(String firstName, String secondName, String patronymic, LocalDate dateOfBirth) {
+    public void create(String firstName, String secondName, String patronymic, String dateOfBirth) {
         Long countMaxId = 0L;
         for (User user: this.users){
             if(user instanceof Student){

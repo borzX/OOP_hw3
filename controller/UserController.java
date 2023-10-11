@@ -17,7 +17,7 @@ public class UserController {
     private final StudentGroupService studentGroupService = new StudentGroupService();
     private final UserView userView = new UserView();
 
-    public void createStudent(String firstName, String secondName, String patronymic, LocalDate dateOfBirth){
+    public void createStudent(String firstName, String secondName, String patronymic, String dateOfBirth){
         dataService.create(firstName, secondName, patronymic, dateOfBirth);
         List<User> userList = dataService.getAll();
         userView.sendOnConsole(userList);
